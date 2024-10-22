@@ -1,6 +1,6 @@
 import express from 'express'
 import { login, logout, register, profile } from '../controllers/controllers'
-import client from '../db/db'
+import client from '../db/db.js'
 import rateLimit from 'express-rate-limit'
 import authMiddleware from '../middleware/auth'
 

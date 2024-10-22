@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import bcrypt from 'bcrypt'
-import client from '../db/db'
+import client from '../db/db.js'
 import jwt from 'jsonwebtoken'
 import dotenv from 'dotenv'
 
