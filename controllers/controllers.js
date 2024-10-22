@@ -16,7 +16,7 @@ const userSchema = z.object({
 
 const register = async (req, res) => {
     try {
-        const useData = userSchema.parse(req.body)
+        const userData = userSchema.parse(req.body)
         const { email, password } = userData
 
         const { rows } = await client.query(
